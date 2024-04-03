@@ -1,0 +1,920 @@
+@font-face {
+    font-family: [Gotham];
+    src: url(../Fonts/GothamXNarrow-Black.otf);
+ }
+
+ @font-face {
+    font-family: [FuturaBQ];
+    src: url(../Fonts/FuturaBQ-Medium.otf);
+ }
+
+*{
+    font-family: Gotham;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body {
+    background-color: rgb(9, 19, 62);
+    background-image: url(../img/Noite-azul2.png);
+    background-size: 2000px 1667px;
+    background-position-y: 400px;
+    z-index: 1;
+}
+
+
+/* Menu */
+
+header {
+    display: flex;
+    color: rgb(0, 159, 227);
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(237, 240, 255);
+    gap: 550px;
+    width: 100%;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 40);
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+nav a {
+    color: rgb(0, 159, 227);
+    padding: 15px 5px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul a:hover {
+    color: rgb(183, 23, 200) ;
+    text-decoration: underline;
+}
+
+header h1 {
+    color: rgb(0, 159, 227);
+    font-weight: 800;
+    font-size: 70px;
+}
+
+/* Apresentação */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 200px;
+}
+
+#inicio {
+    max-width: 800px;
+    height: 330px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#apresentacao h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+#apresentacao h2{
+    font-family: FuturaBQ;
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+#inicio button {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(0, 159, 227) ;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#inicio button:hover {
+    background-color: rgb(35, 189, 228);
+}
+
+#avatar img {
+    width: 600px;
+    height: auto;
+}
+
+#redes {
+    display: flex;
+    gap: 15px;
+}
+
+#redes img{
+    width: 55px;
+    height: 55px;
+}
+
+#redes a img:hover{
+    width: 65px;
+    height: 65px;
+}
+
+/* Sobre Mim */
+
+#sobre_mim {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    border-top: 4px solid rgb(246, 161, 59);
+}
+
+#euesquerdo {
+    margin-top: 8.5%;
+    align-items: center;
+    text-align: center;
+}
+
+#euesquerdo h1 {
+    font-size: 100px;
+    padding-left: 100px;
+    font-weight: 700;
+}
+
+#euesquerdo h3{
+    font-size: 24px;
+    padding-left: 100px;
+    font-family: FuturaBQ;
+    font-weight: 100;
+}
+
+#euesquerdo h3:nth-child(4) {
+    font-style: italic;
+    padding: 5px 0px 2px 100px;
+}
+
+#euesquerdo img {
+    width: 450px;
+    height: auto;
+}
+
+#eudireito {
+    margin-top: 5%;
+    max-width: 490px;
+    padding: 0px 100px 0px 0px;
+}
+
+#eudireito h1 {
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+#eudireito h2{
+    font-family: FuturaBQ;
+    font-style: italic;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+    left: -2px;
+    word-spacing: 1px;
+}
+#eudireito h3 {
+    padding: 2px 0px;
+    font-weight: 400;
+}
+
+#infosfull {
+    display: flex;
+    gap: 0px;
+    margin-top: 10%;
+}
+
+#informacao {
+    padding-right: 0px;
+    font-size: 18px;
+    margin: none;
+}
+
+#informacao h1 {
+    font-size: 34px;
+}
+
+#conhecimentos {
+    position: relative;
+    left: 35px;
+    border-left: 2px solid rgb(246, 161, 59);
+    padding-left: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#conhecimentos h1 {
+    font-size: 34px;
+}
+
+
+#like {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding: 0px 0px;
+    position: relative;
+    left: -6px;
+}
+
+#like h3 {
+    color: rgb(0, 195, 73);
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 4px;
+}
+
+#like img {
+    width: 80px;
+    height: 80px;
+    align-items:flex-start;
+}
+
+#notlike {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    position: relative;
+    right: -14px;
+}
+
+#notlike h3 {
+    color: rgb(183, 23, 200);
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 7px;
+}
+
+#notlike img {
+    width: 60px;
+    height: 60px;
+}
+
+#descricao {
+    font-family: FuturaBQ;
+    font-size: 19px;
+    border: 8px solid rgb(246, 161, 59);
+    padding: 20px;
+}
+
+#descricao h3 {
+    font-weight: 100;
+    padding-left: 8px;
+}
+
+/* Contato */
+
+#contato {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 90vh;
+    border-top: 4px solid rgb(246, 161, 59);
+    text-align: center;
+}
+
+#contato h1 {
+    margin-top: 8%;
+    font-size: 100px;
+    color: rgb(246, 161, 59);
+    font-weight: 700;
+}
+
+#contato p {
+    font-size: 26px;
+    font-family: FuturaBQ;
+    font-weight: 600;
+}
+
+#contato form {
+    text-align: left;
+    font-weight: 600;
+}
+
+#contato form input, textarea {
+    height: 40px;
+    width: 400px;
+    max-width: 700px;
+    padding-inline: 5px;
+    color: black;
+    font-family: Gotham;
+}
+
+#contato input:nth-child(15) {
+    width: 412px;
+    height: 60px;
+    margin-top: 2%;
+    font-family: Gotham;
+    font-size: 30px;
+    background-color: rgb(0, 159, 227);
+    color: white;
+    border: none;
+    padding: 0px 60px 0px 60px;
+    cursor: pointer;
+}
+
+#contato input:nth-child(15):hover {
+    background-color: rgb(35, 189, 228);
+}
+
+/* Responsividade Iphone 1280 x 720 */
+
+@media screen and (max-width: 1280px) {
+
+    body {
+        box-sizing: 0px;
+        padding: 0px;
+        background-size: 1280px 720px;
+    }
+
+    header {
+        max-width: 100%;
+        display: flex;
+        color: rgb(0, 159, 227);
+        font-weight: 600;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        background-color: rgb(237, 240, 255);
+        gap: 0px;
+        width: 100%;
+        box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 40);
+        height: 80px;
+        position: fixed;
+    }
+
+    header h1 {
+        font-size: 45px;
+        padding-left: 20px;
+    }
+
+    header nav {
+        padding-left: 90px;
+    }
+
+    /* Apresentação */
+
+main {
+    margin: 0px 20px;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 0px;
+}
+
+#inicio {
+    padding-top: 200px;
+    margin: 50px;
+    height: 330px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+#apresentacao h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#apresentacao h2{
+    font-family: FuturaBQ;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px
+}
+
+#inicio button {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(0, 159, 227) ;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#avatar img {
+    padding-top: 200px;
+    position: relative;
+    top: -70px;
+    width: 350px;
+    height: auto;
+}
+
+#redes {
+    display: flex;
+    padding-top: 10px;
+    gap: 7px;
+}
+
+#redes img{
+    width: 55px;
+    height: 55px;
+}
+
+#redes a img:hover {
+    width: 55px;
+    height: 55px;
+}
+
+/* Sobre mim */
+
+#sobre_mim {
+    display:flex;
+    border-top: 4px solid rgb(246, 161, 59);
+    align-items:end;
+    justify-content: left;
+    gap: 100px;
+}
+
+#euesquerdo {
+    padding-left: 150px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+#euesquerdo h1 {
+    align-items: normal;
+    padding-left: 0px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#euesquerdo h3{
+    padding-right: 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: FuturaBQ;
+    font-weight: 100;
+}
+
+#euesquerdo h3:nth-child(4) {
+    font-style: italic;
+    padding: 0px 0px 0px 20px;
+}
+
+#euesquerdo img {
+    padding-right: 20px;
+    width: 400px;
+    height: auto;
+}
+
+#eudireito {
+    margin-top: 0%;
+    max-width: 398px;
+    padding: 0px 0px 0px 0px;
+}
+
+#infosfull {
+    display: flex;
+    max-width: 398px;
+    margin: 0px;
+    gap: 0px;
+}
+
+#eudireito h1 {
+    font-weight: 400;
+}
+
+#eudireito h2{
+    font-family: FuturaBQ;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    max-width: 398px;
+}
+
+#eudireito h3 {
+    font-weight: 400;
+}
+
+#informacao {
+    padding-right: 0px;
+    font-size: 18px;
+    margin: none;
+    width: 430px;
+}
+
+#informacao h1 {
+    font-size: 34px;
+    padding-left: 0px;
+}
+
+#informacao h3 {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#conhecimentos {
+    width: 398px;
+    border-left: 2px solid rgb(246, 161, 59);
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#conhecimentos h1 {
+    font-size: 34px;
+    padding-left: 10px ;
+}
+
+#conhecimentos h3 {
+    font-size: 18px;
+    padding-left: 0px ;
+}
+
+#like {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding: 0px 0px;
+    position: relative;
+    left: 0px;
+}
+
+#like h3 {
+    color: rgb(0, 195, 73);
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 0px;
+}
+
+#like img {
+    width: 60px;
+    height: 60px;
+    align-items:flex-start;
+}
+
+#notlike {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    position: relative;
+    right: -14px;
+}
+
+#notlike h3 {
+    color: rgb(183, 23, 200);
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 0px;
+}
+
+#notlike img {
+    width: 50px;
+    height: 50px;
+}
+
+#descricao {
+    font-family: FuturaBQ;
+    font-size: 16px;
+    border: 8px solid rgb(246, 161, 59);
+    padding: 6px;
+    max-width: 370px;
+}
+
+#descricao h3 {
+    font-weight: 100;
+    padding-left: 8px;
+}
+
+/* Contato */
+
+#contato {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 60vh;
+    border-top: 4px solid rgb(246, 161, 59);
+    text-align: center;
+}
+
+#contato h1 {
+    margin-top: 8%;
+    font-size: 50px;
+}
+
+#contato p {
+    font-size: 20px;
+}
+
+}
+
+/* Responsividade Iphone 14Pro Max */
+
+@media screen and (max-width: 430px) {
+
+    body {
+        margin: none;
+        max-width: 430px;
+        box-sizing: 0px;
+        padding: 0px;
+        background-size: 430px auto;
+    }
+
+    header {
+        display: flex;
+        color: rgb(0, 159, 227);
+        font-weight: 600;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+        background-color: rgb(237, 240, 255);
+        gap: 0px;
+        width: 100%;
+        box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 40);
+        height: 60px;
+        
+    }
+
+    header h1 {
+        font-size: 35px;
+        padding-left: 20px;
+    }
+
+    header nav {
+        padding-left: 90px;
+    }
+
+    
+    /* Apresentação */
+
+main {
+    align-items: center;
+    justify-content: center;
+    height: 34vh;
+    gap: 0px;
+}
+
+#inicio {
+    padding-top: 200px;
+    margin: 50px;
+    height: 330px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+#apresentacao h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#apresentacao h2{
+    font-family: FuturaBQ;
+    font-size: 9px;
+    font-weight: 400;
+    padding-bottom: 10px
+}
+
+#inicio button {
+    color: white;
+    font-size: 10px;
+    background-color: rgb(0, 159, 227) ;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#avatar img {
+    padding-top: 200px;
+    position: relative;
+    top: -90px;
+    width: 150px;
+    height: auto;
+}
+
+#redes {
+    display: flex;
+    padding-top: 10px;
+    gap: 7px;
+}
+
+#redes img{
+    width: 25px;
+    height: 25px;
+}
+
+#redes a img:hover {
+    width: 25px;
+    height: 25px;
+}
+
+/* Sobre mim */
+
+#sobre_mim {
+    display: inline-block;
+    border-top: 4px solid rgb(246, 161, 59);
+    align-items:end;
+    justify-content: left;
+}
+
+#euesquerdo {
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#euesquerdo h1 {
+    align-items: normal;
+    padding-left: 0px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#euesquerdo h3{
+    padding-right: 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: FuturaBQ;
+    font-weight: 100;
+}
+
+#euesquerdo h3:nth-child(4) {
+    font-style: italic;
+    padding: 0px 0px 0px 20px;
+}
+
+#euesquerdo img {
+    padding-right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+#eudireito {
+    margin-top: 0%;
+    max-width: 430px;
+    padding: 0px 0px 0px 0px;
+}
+
+#infosfull {
+    display: inline-block;
+    max-width: 100%;
+    
+    margin: 0px;
+    
+}
+
+#eudireito h1 {
+    font-weight: 400;
+}
+
+#eudireito h2{
+    font-family: FuturaBQ;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+    left: -2px;
+    word-spacing: 1px;
+}
+
+#eudireito h3 {
+    font-weight: 400;
+}
+
+#informacao {
+    padding-right: 0px;
+    font-size: 18px;
+    margin: none;
+    width: 430px;
+}
+
+#informacao h1 {
+    font-size: 34px;
+    padding-left: 130px;
+}
+
+#informacao h3 {
+    text-align: center;
+    padding-left: 10px;
+}
+
+#conhecimentos {
+
+    width: 430px;
+    border-left: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    left: 0px;
+}
+
+#conhecimentos h1 {
+    font-size: 34px;
+    padding-left: 10px ;
+}
+
+#conhecimentos h3 {
+    padding-left: 10px ;
+}
+
+#like {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    left: 0px;
+}
+
+#like h3 {
+    color: rgb(0, 195, 73);
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 0px;
+}
+
+#like img {
+    width: 50px;
+    height: 50px;
+    align-items:flex-start;
+}
+
+#notlike {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    position: relative;
+    right: -14px;
+}
+
+#notlike h3 {
+    color: rgb(183, 23, 200);
+    font-size: 19px;
+    font-weight: 300;
+    word-spacing: 0px;
+}
+
+#notlike img {
+    width: 40px;
+    height: 40px;
+}
+
+#descricao {
+    font-family: FuturaBQ;
+    font-size: 16px;
+    border: 8px solid rgb(246, 161, 59);
+    padding: 6px;
+}
+
+#descricao h3 {
+    font-weight: 100;
+    padding-left: 8px;
+}
+
+/* Contato */
+
+#contato {
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 60vh;
+    border-top: 4px solid rgb(246, 161, 59);
+    text-align: center;
+}
+
+#contato h1 {
+    margin-top: 8%;
+    font-size: 30px;
+}
+
+#contato p {
+    font-size: 14px;
+}
+
+}
